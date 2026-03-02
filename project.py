@@ -1,6 +1,4 @@
-num1 = int(input("enter your first number :"))
-num2 = int(input("enter your second number :"))
-operation = input("enter your operation : ")
+
 
 def cal(a,b,op):
     if( op == "+"):
@@ -20,4 +18,12 @@ def cal(a,b,op):
         print("not a valid operation")
 
 
-cal(num1,num2,operation)
+while True:
+    num1 = int(input("enter your first value : "))
+    num2 = int(input("enter your second value : "))
+    operation = input("enter your operation : ")
+    cal(num1,num2,operation)
+    choice = input("continue? (y/n) : ")
+    if(choice == "n"):
+     print("cal ended")
+     break
